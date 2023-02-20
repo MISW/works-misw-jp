@@ -1,0 +1,18 @@
+# base
+css:
+  style: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+js:
+  main: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+  resizer: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+# # local
+# css:
+#   style: './css/style.css'
+# js:
+#   main: './js/main.js'
+#   resizer: './js/iframeResizer.contentWindow.js'
+# # prod
+# css:
+#   style: 'https://static.tumblr.com/dlluljv/GCLrlwa4j/style.css'
+# js:
+#   main: 'https://static.tumblr.com/dlluljv/MpBrluz1v/main.js'
+#   resizer: 'https://static.tumblr.com/dlluljv/xvNrluz1s/iframeresizer.contentwindow.js'

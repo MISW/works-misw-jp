@@ -1,0 +1,16 @@
+$bg: #fff;
+$bg-light: rgba(0, 0, 10, 0.07);
+$base: #36393d;
+$light: #878ea0;
+$link: #5289db;
+$hover: darken($link, 8%);
+$border: #ddd;
+$btn-tw: #55acee;
+$btn-fb: #3b5998;
+$globalheader-mask: rgba(255, 255, 255, 0.6);
+$mq-lg: '(min-width: 1200px)';
+$mq-md: '(min-width: 992px)';
+$mq-sm: '(min-width: 768px)';
+$at2x: '(-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx)';
+$at2x-tablet: '(-webkit-min-device-pixel-ratio: 2) and (min-device-width: 768px),(min-resolution: 2dppx) and (min-device-width: 768px)';
+$at2x-pc: '(-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px),(min-resolution: 2dppx) and (min-device-width: 1025px)';

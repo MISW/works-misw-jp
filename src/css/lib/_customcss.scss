@@ -1,0 +1,59 @@
+body {
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+img {
+  pointer-events: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+a,
+.post-content-anchor:hover,
+.nav li a:hover,
+.pagenation a:hover,
+.entry-footer a:hover {
+  color: #00479d;
+}
+.link-url {
+  background-color: #00479d;
+}
+.pagenation a:hover {
+  &:before,
+  &:after {
+    border-color: #00479d;
+  }
+}
+.tag-list ul li a:hover {
+  border-color: #00479d;
+  color: #00479d;
+}
+.social-accounts li a:hover {
+  border-color: #00479d;
+  .social-accounts-icon path {
+    fill: #00479d;
+  }
+}
+.post-content-anchor,
+.post-content-wrapper,
+.post-photo-thumb,
+.has-thumbnail {
+  border-radius: 25%;
+  aspect-ratio: 1/1;
+}
+.tmblr-iframe,
+.entry-footer,
+.entry-footer-section,
+.ui_dialog_lock {
+  display: none !important;
+}

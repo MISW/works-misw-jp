@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#">
+  <%- include('components/_header') %>
+  <body
+    oncontextmenu="return false;"
+    oncopy="return false;"
+    class="{block:IndexPage}page-index{/block:IndexPage} {block:TagPage}page-tag{/block:TagPage} {block:PermalinkPage}page-permalink page-{PostID}{/block:PermalinkPage}">
+    <style>
+      {CustomCSS}
+    </style>
+    <div class="site-content works-frame" id="works-frame">
+      {block:IndexPage} {block:ShowHeaderImage}
+      <div class="cover-image" style="background-image: url('{HeaderImage}')"></div>
+      {/block:ShowHeaderImage} {/block:IndexPage} {block:IndexPage}
+      <div class="section-post l-section">
+        <div class="top-post-container size-m">
+          <div class="index-post-wrapper margin-narrow">
+            {block:Posts}
+            <article class="post index-post {PostType}">
+              <div class="post-inner">
+                {block:Text}
+                <a href="{Permalink}" class="post-content-anchor">
+                  <div class="post-content-wrapper">
+                    {block:Title}
+                    <div class="index-post-content index-post-title">{Title}</div>
+                    {/block:Title}
+                  </div>
+                </a>
+                <div class="index-post-content-text-body">{Body}</div>
+                {/block:Text} {block:Photo}
+                <a href="{Permalink}">
+                  <div class="post-photo-thumb" style="background-image: url('{PhotoURL-500}')"></div>
+                </a>
+                {/block:Photo} {block:Photoset} {block:Photos}
+                <a href="{Permalink}">
+                  <div class="post-photo-thumb" style="background-image: url('{PhotoURL-500}')"></div>
+                </a>
+                {/block:Photos} {/block:Photoset} {block:Quote}
+                <a href="{Permalink}" class="post-content-anchor">
+                  <div class="post-content-wrapper">
+                    <div class="index-post-content">{Quote}</div>
+                  </div>
+                </a>
+                {/block:Quote} {block:Link} <a href="{Permalink}" class="post-content-anchor {block:Thumbnail}has-thumbnail{/block:Thumbnail}"
+                {block:Thumbnail}style="background-image: url('{ThumbnailURL}');"{/block:Thumbnail} >
+                <div class="post-content-wrapper">
+                  <div class="index-post-content">{Name}</div>
+                </div>
+                <!-- </a> -->
+                {/block:Link} {block:Chat}
+                <a href="{Permalink}" class="post-content-anchor">
+                  <div class="post-content-wrapper">
+                    {block:Title}
+                    <div class="index-post-content index-post-title">{Title}</div>
+                    {/block:Title}
+                  </div>
+                </a>
+                {/block:Chat} {block:Video} <a href="{Permalink}" class="post-content-anchor {block:VideoThumbnail}has-thumbnail{/block:VideoThumbnail}"
+                {block:VideoThumbnail}style="background-image: url('{VideoThumbnailURL}');"{/block:VideoThumbnail} >
+                <div class="post-content-wrapper">
+                  {block:Caption}
+                  <div class="index-post-content">{Caption}</div>
+                  {/block:Caption}
+                </div>
+                <!-- </a> -->
+                {/block:Video} {block:Audio}
+                <a href="{Permalink}" class="post-content-anchor">
+                  <div class="post-content-wrapper">
+                    {block:Caption}
+                    <div class="index-post-content">{Caption}</div>
+                    {/block:Caption}
+                  </div>
+                </a>
+                {/block:Audio} {block:Answer}
+                <a href="{Permalink}" class="post-content-anchor">
+                  <div class="post-content-wrapper">
+                    <div class="index-post-content index-post-title">{Question}</div>
+                  </div>
+                </a>
+                {/block:Answer}
+                <footer class="index-entry-footer">
+                  <div class="index-entry-footer-meta">
+                    <span class="meta-elements date">
+                      <a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</a>
+                    </span>
+                  </div>
+                </footer>
+              </div>
+            </article>
+            {/block:Posts}
+          </div>
+        </div>
+      </div>
+      {block:Pagination}
+      <div class="l-container">
+        <div class="pagenation pagenation-index">
+          {block:PreviousPage}
+          <a href="{PreviousPage}" class="pager-prev"></a>
+          {/block:PreviousPage} {block:NextPage}
+          <a href="{NextPage}" class="pager-next" rel="next"></a>
+          {/block:NextPage}
+        </div>
+      </div>
+      {/block:Pagination} {/block:IndexPage} {block:PermalinkPage} {block:Posts inlineMediaWidth="1920"}
+      <article class="post permalink-post {TagsAsClasses} {PostType}">
+        {block:Photo}
+        <div class="l-container full-image">
+          {LinkOpenTag}
+          <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />
+          {LinkCloseTag}
+        </div>
+        {/block:Photo} {block:Photoset}
+        <div class="l-container full-image">{Photoset}</div>
+        {/block:Photoset}
+        <div class="l-container-mini section">
+          {block:Text}
+          <header class="entry-header">
+            {block:Title}
+            <h1 class="entry-title">
+              <a href="{Permalink}">{Title}</a>
+            </h1>
+            {/block:Title}
+          </header>
+          <div class="entry-content">{Body}</div>
+          {/block:Text} {block:Photo}
+          <div class="entry-content">
+            {block:Caption}
+            <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+          {/block:Photo} {block:Photoset}
+          <div class="entry-content">
+            {block:Caption}
+            <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+          {/block:Photoset} {block:Quote}
+          <div class="entry-content {Length}">
+            <blockquote>“{Quote}”</blockquote>
+            {block:Source}
+            <p class="quote-source">{Source}</p>
+            {/block:Source}
+          </div>
+          {/block:Quote} {block:Link}
+          <header class="entry-header">
+            <h1 class="entry-title">
+              <a href="{URL}" class="link-url" {Target}>{Name}</a>
+            </h1>
+          </header>
+          <div class="entry-content">
+            {block:Description}
+            <div class="link-description">{Description}</div>
+            {/block:Description}
+          </div>
+          {/block:Link} {block:Chat}
+          <div class="entry-content">
+            {block:Title}
+            <h1 class="entry-title">
+              <a href="{Permalink}">{Title}</a>
+            </h1>
+            {/block:Title}
+            <ul class="ul-chat">
+              {block:Lines}
+              <li class="{Alt} user_{UserNumber}">
+                {block:Label}
+                <span class="label">{Label}</span>
+                {/block:Label} {Line}
+              </li>
+              {/block:Lines}
+            </ul>
+          </div>
+          {/block:Chat} {block:Video}
+          <div class="entry-content">
+            {Video-700} {block:Caption}
+            <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+          {/block:Video} {block:Audio}
+          <div class="entry-content">
+            {AudioPlayerBlack} {block:Caption}
+            <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+          {/block:Audio} {block:Answer}
+          <div class="asker-group">
+            <img src="{AskerPortraitURL-24}" width="24" height="24" />
+            {Asker}
+          </div>
+          <header class="entry-header">
+            <h1 class="entry-title question">{Question}</h1>
+          </header>
+          <div class="entry-content">
+            <div class="answer cont">{Answer}</div>
+          </div>
+          {/block:Answer}
+          <footer class="entry-footer">
+            <div class="entry-footer-section article-meta">
+              <span class="meta-elements date">
+                <a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</a>
+              </span>
+              {block:ContentSource}
+              <span class="meta-elements content-source">
+                <a href="{SourceURL}">
+                  {lang:Source}: {block:SourceLogo}
+                  <img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+                  {/block:SourceLogo} {block:NoSourceLogo} {SourceTitle} {/block:NoSourceLogo}
+                </a>
+              </span>
+              {/block:ContentSource}
+            </div>
+            {block:RebloggedFrom}
+            <div class="entry-footer-section rebloggedfrom">
+              <div class="entry-footer-section-inner">
+                <h3>Reblogged from</h3>
+                <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="favicon" /> {ReblogParentName}</a>
+              </div>
+              <div class="entry-footer-section-inner">
+                <h3>Originally posted by</h3>
+                <a href="{ReblogRootURL}"><img src="{ReblogRootPortraitURL-16}" class="favicon" /> {ReblogRootName}</a>
+              </div>
+            </div>
+            {/block:RebloggedFrom} {block:NoteCount}
+            <div class="entry-footer-section notecount">
+              <h3>{NoteCount} Notes</h3>
+              <div class="notecontainer">{PostNotes}</div>
+            </div>
+            {/block:NoteCount}
+          </footer>
+          {/block:Date}
+        </div>
+      </article>
+      {/block:Posts} {/block:PermalinkPage} {block:PermalinkPagination}
+      <div class="pagenation pagenation-permalink">
+        {block:NextPost}
+        <a href="{NextPost}" class="pager-prev" rel="next"></a>
+        {/block:NextPost}
+        <a href="/" class="pager-top">Top</a>
+        {block:PreviousPost}
+        <a href="{PreviousPost}" class="pager-next"></a>
+        {/block:PreviousPost}
+      </div>
+      {/block:PermalinkPagination}
+    </div>
+    <script src="<%- js.main %>"></script>
+    <script src="<%- js.resizer %>"></script>
+  </body>
+</html>
