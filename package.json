@@ -12,7 +12,7 @@
   "devDependencies": {
     "@squoosh/cli": "0.7.3",
     "autoprefixer": "10.4.14",
-    "browser-sync": "2.29.0",
+    "browser-sync": "2.29.1",
     "ejs-lint": "2.0.0",
     "gulp": "4.0.2",
     "gulp-ejs": "5.1.0",
@@ -23,7 +23,7 @@
     "gulp-sass": "5.1.0",
     "gulp-uglify-es": "3.0.0",
     "js-yaml": "4.1.0",
-    "prettier": "2.8.6",
-    "sass": "1.59.3"
+    "prettier": "2.8.7",
+    "sass": "1.60.0"
   }
 }
