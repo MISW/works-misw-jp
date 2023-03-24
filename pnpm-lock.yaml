@@ -15,7 +15,7 @@ specifiers:
   gulp-uglify-es: 3.0.0
   js-yaml: 4.1.0
   prettier: 2.8.6
-  sass: 1.59.3
+  sass: 1.60.0
 
 devDependencies:
   '@squoosh/cli': 0.7.3
@@ -32,7 +32,7 @@ devDependencies:
   gulp-uglify-es: 3.0.0
   js-yaml: 4.1.0
   prettier: 2.8.6
-  sass: 1.59.3
+  sass: 1.60.0
 
 packages:
 
@@ -4890,8 +4890,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass/1.59.3:
-    resolution: {integrity: sha512-QCq98N3hX1jfTCoUAsF3eyGuXLsY7BCnCEg9qAact94Yc21npG2/mVOqoDvE0fCbWDqiM4WlcJQla0gWG2YlxQ==}
+  /sass/1.60.0:
+    resolution: {integrity: sha512-updbwW6fNb5gGm8qMXzVO7V4sWf7LMXnMly/JEyfbfERbVH46Fn6q02BX7/eHTdKpE7d+oTkMMQpFWNUMfFbgQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
