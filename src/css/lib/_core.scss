@@ -86,12 +86,12 @@
   overflow: hidden;
   box-sizing: border-box;
   .margin-narrow & {
-    padding-left: 2px;
-    padding-bottom: 2px;
+    padding-left: 1px;
+    padding-bottom: 1px;
   }
   .margin-wide & {
-    padding-left: 2%;
-    padding-bottom: 2vw;
+    padding-left: 1px;
+    padding-bottom: 1px;
   }
 }
 .index-post.photo {
@@ -116,7 +116,7 @@
   .index-post {
     width: 33.3333%;
     @media #{$mq-sm} {
-      width: 25%;
+      width: 20%;
     }
   }
 }
@@ -179,13 +179,13 @@
   .size-m & {
     height: 33.3333vw;
     @media #{$mq-sm} {
-      height: 180px;
+      height: 144px;
     }
     @media #{$mq-md} {
-      height: 210px;
+      height: 168px;
     }
     @media #{$mq-lg} {
-      height: 250px;
+      height: 200px;
     }
   }
   .size-l & {
@@ -293,11 +293,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 3em;
-  font-size: 0.8rem;
+  margin-bottom: 1em;
+  font-size: 0.8em;
   box-sizing: border-box;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 25%;
+  padding-right: 25%;
   a {
     color: $light;
   }

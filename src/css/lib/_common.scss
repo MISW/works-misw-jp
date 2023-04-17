@@ -10,8 +10,6 @@ body {
   background: $bg;
   color: $base;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.4;
-  font-size: 0.9rem;
   word-wrap: break-word;
 }
 a {
@@ -37,9 +35,9 @@ h6 {
   }
 }
 .l-section {
-  margin: 2.5em auto;
+  margin: auto;
   @media #{$mq-md} {
-    margin: 4em auto;
+    margin: auto;
   }
   img {
     max-width: 100%;
