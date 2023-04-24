@@ -13,4 +13,4 @@ Based on [sanographix/illustfolio4](https://github.com/sanographix/illustfolio4/
 
 ## 作品を登録したい人向け
 
-[作品紹介ページに作品を登録したい](https://misw.kibe.la/notes/7337/)
+[作品紹介ページに作品を登録したい](https://misw.kibe.la/shared/entries/71d23088-882d-4d90-b297-fd7063b90292/)
