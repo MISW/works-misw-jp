@@ -48,8 +48,8 @@ devDependencies:
     specifier: 2.8.8
     version: 2.8.8
   sass:
-    specifier: 1.63.4
-    version: 1.63.4
+    specifier: 1.63.5
+    version: 1.63.5
 
 packages:
 
@@ -3181,8 +3181,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass@1.63.4:
-    resolution: {integrity: sha512-Sx/+weUmK+oiIlI+9sdD0wZHsqpbgQg8wSwSnGBjwb5GwqFhYNwwnI+UWZtLjKvKyFlKkatRK235qQ3mokyPoQ==}
+  /sass@1.63.5:
+    resolution: {integrity: sha512-Q6c5gs482oezdAp+0fWF9cRisvpy7yfYb64knID0OE8AnMgtkluRPfpGMFjeD4/+M4+6QpJZCU6JRSxbjiktkg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
