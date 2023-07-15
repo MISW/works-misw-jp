@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html prefix="og: https://ogp.me/ns#">
   <%- include('components/_header') %>
   <body
@@ -41,12 +41,15 @@
                     <div class="index-post-content">{Quote}</div>
                   </div>
                 </a>
-                {/block:Quote} {block:Link} <a href="{Permalink}" class="post-content-anchor {block:Thumbnail}has-thumbnail{/block:Thumbnail}"
-                {block:Thumbnail}style="background-image: url('{ThumbnailURL}');"{/block:Thumbnail} >
-                <div class="post-content-wrapper">
-                  <div class="index-post-content">{Name}</div>
-                </div>
-                <!-- </a> -->
+                {/block:Quote} {block:Link}
+                <a
+                  href="{Permalink}"
+                  class="post-content-anchor {block:Thumbnail} has-thumbnail {/block:Thumbnail}"
+                  style="{block:Thumbnail}background-image: url('{ThumbnailURL}');{/block:Thumbnail}">
+                  <div class="post-content-wrapper">
+                    <div class="index-post-content">{Name}</div>
+                  </div>
+                </a>
                 {/block:Link} {block:Chat}
                 <a href="{Permalink}" class="post-content-anchor">
                   <div class="post-content-wrapper">
@@ -55,14 +58,17 @@
                     {/block:Title}
                   </div>
                 </a>
-                {/block:Chat} {block:Video} <a href="{Permalink}" class="post-content-anchor {block:VideoThumbnail}has-thumbnail{/block:VideoThumbnail}"
-                {block:VideoThumbnail}style="background-image: url('{VideoThumbnailURL}');"{/block:VideoThumbnail} >
-                <div class="post-content-wrapper">
-                  {block:Caption}
-                  <div class="index-post-content">{Caption}</div>
-                  {/block:Caption}
-                </div>
-                <!-- </a> -->
+                {/block:Chat} {block:Video}
+                <a
+                  href="{Permalink}"
+                  class="post-content-anchor {block:VideoThumbnail} has-thumbnail {/block:VideoThumbnail}"
+                  style="{block:VideoThumbnail}background-image: url('{VideoThumbnailURL}');{/block:VideoThumbnail}">
+                  <div class="post-content-wrapper">
+                    {block:Caption}
+                    <div class="index-post-content">{Caption}</div>
+                    {/block:Caption}
+                  </div>
+                </a>
                 {/block:Video} {block:Audio}
                 <a href="{Permalink}" class="post-content-anchor">
                   <div class="post-content-wrapper">
