@@ -1,0 +1,18 @@
+/*
+  Access-Control-Allow-Origin: *
+
+/**/css/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet, noindex
+
+/**/img/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet
+
+/**/js/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet, noindex
+
+https://:works-misw-jp.pages.dev/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet, noindex

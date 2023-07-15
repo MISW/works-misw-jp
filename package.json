@@ -9,6 +9,7 @@
     "start": "gulp",
     "watch": "gulp"
   },
+  "dependencies": {},
   "devDependencies": {
     "@squoosh/cli": "0.7.3",
     "autoprefixer": "10.4.14",
