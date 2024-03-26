@@ -13,7 +13,7 @@
   "devDependencies": {
     "@squoosh/cli": "0.7.3",
     "autoprefixer": "10.4.19",
-    "browser-sync": "2.29.3",
+    "browser-sync": "3.0.2",
     "ejs-lint": "2.0.0",
     "gulp": "4.0.2",
     "gulp-ejs": "5.1.0",
