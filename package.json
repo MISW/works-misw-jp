@@ -25,6 +25,6 @@
     "gulp-uglify-es": "3.0.0",
     "js-yaml": "4.1.0",
     "prettier": "3.2.5",
-    "sass": "1.76.0"
+    "sass": "1.77.0"
   }
 }
