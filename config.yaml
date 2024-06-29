@@ -1,12 +1,12 @@
-# ---prod---
-css:
-  style: 'https://static.tumblr.com/dlluljv/nQErtguz2/style.css'
-js:
-  main: 'https://static.tumblr.com/dlluljv/MpBrluz1v/main.js'
-  resizer: 'https://static.tumblr.com/dlluljv/xvNrluz1s/iframeresizer.contentwindow.js'
 # ---local---
+css:
+  style: './css/style.css'
+js:
+  main: './js/main.js'
+  resizer: './js/iframeResizer.contentWindow.js'
+# # ---prod---
 # css:
-#   style: './css/style.css'
+#   style: 'https://static.tumblr.com/dlluljv/DRSsftvvp/style.css'
 # js:
-#   main: './js/main.js'
-#   resizer: './js/iframeResizer.contentWindow.js'
+#   main: 'https://static.tumblr.com/dlluljv/Qg7sftvw3/main.js'
+#   resizer: 'https://static.tumblr.com/dlluljv/lA4sftvw1/iframeresizer.contentwindow.js'
