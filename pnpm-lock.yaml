@@ -27,8 +27,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0
       gulp-notify:
-        specifier: 4.0.0
-        version: 4.0.0
+        specifier: 5.0.0
+        version: 5.0.0
       gulp-plumber:
         specifier: 1.2.1
         version: 1.2.1
@@ -702,9 +702,9 @@ packages:
     resolution: {integrity: sha512-Nygek+aV5+Fk8pneX8ztR6XqWuOp19AglVJ+qpIxPzyx/qsN8HHtroi3yiKhFDCDblIGhKcbmPonBEOB8NYbZQ==}
     engines: {node: '>= 6', npm: '>= 3'}
 
-  gulp-notify@4.0.0:
-    resolution: {integrity: sha512-0cdDvZkHVqu4tqrcOI/jL5YdxYEIPQ7+p3YxnO48w5hhPSisvogZ887qL+fpYItg9m4MUhJ5Se8p8xGy3uJESA==}
-    engines: {node: '>=0.8.0', npm: '>=1.2.10'}
+  gulp-notify@5.0.0:
+    resolution: {integrity: sha512-7ib3qN7lbEbrOjH9zU6Uh2RLrTBEGlSWWXqStSAGG6TwYC2WFur180iDR8LZv106gW4/b3PY+kW4DQaJkD/vpA==}
+    engines: {node: '>=18.0.0'}
 
   gulp-plumber@1.2.1:
     resolution: {integrity: sha512-mctAi9msEAG7XzW5ytDVZ9PxWMzzi1pS2rBH7lA095DhMa6KEXjm+St0GOCc567pJKJ/oCvosVAZEpAey0q2eQ==}
@@ -940,20 +940,11 @@ packages:
   limiter@1.1.5:
     resolution: {integrity: sha512-FWWMIEOxz3GwUI4Ts/IvgVy6LPvoMPgjMdQ185nN6psJyBJ4yOpzqm695/h5umdLJg2vW3GR5iG11MAkR2AzJA==}
 
-  lodash._reinterpolate@3.0.0:
-    resolution: {integrity: sha512-xYHt68QRoYGjeeM/XOE1uJtvXQAgvszfBhjV4yvsQH0u2i9I6cI6c6/eG4Hh3UAOVn0y/xAXwmTzEay49Q//HA==}
-
   lodash.clonedeep@4.5.0:
     resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
 
   lodash.isfinite@3.3.2:
     resolution: {integrity: sha512-7FGG40uhC8Mm633uKW1r58aElFlBlxCrg9JfSi3P6aYiWmfiWF0PgMd86ZUsxE5GwWPdHoS2+48bwTh2VPkIQA==}
-
-  lodash.template@4.5.0:
-    resolution: {integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==}
-
-  lodash.templatesettings@4.2.0:
-    resolution: {integrity: sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==}
 
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
@@ -1020,8 +1011,8 @@ packages:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
 
-  node-notifier@9.0.1:
-    resolution: {integrity: sha512-fPNFIp2hF/Dq7qLDzSg4vZ0J4e9v60gJR+Qx7RbjbWqzPDdEqeVpEx5CFeDAELIl+A/woaaNn1fQ5nEVerMxJg==}
+  node-notifier@10.0.1:
+    resolution: {integrity: sha512-YX7TSyDukOZ0g+gmzjB6abKu+hTGvO8+8+gIFDsRCU2t8fLV/P2unmt+LGFaIa4y64aX98Qksa97rgz4vMNeLQ==}
 
   node-releases@2.0.18:
     resolution: {integrity: sha512-d9VeXT4SJ7ZeOqGX6R5EM022wpL+eWPooLI+5UpWn2jCT1aosUQEhQP214x33Wkwx3JQMvIm+tIoVOdodFS40g==}
@@ -2300,14 +2291,14 @@ snapshots:
       plugin-error: 1.0.1
       through2: 3.0.2
 
-  gulp-notify@4.0.0:
+  gulp-notify@5.0.0:
     dependencies:
       ansi-colors: 4.1.3
-      fancy-log: 1.3.3
-      lodash.template: 4.5.0
-      node-notifier: 9.0.1
+      fancy-log: 2.0.0
+      lodash: 4.17.21
+      node-notifier: 10.0.1
       node.extend: 2.0.3
-      plugin-error: 1.0.1
+      plugin-error: 2.0.1
       through2: 4.0.2
 
   gulp-plumber@1.2.1:
@@ -2529,20 +2520,9 @@ snapshots:
 
   limiter@1.1.5: {}
 
-  lodash._reinterpolate@3.0.0: {}
-
   lodash.clonedeep@4.5.0: {}
 
   lodash.isfinite@3.3.2: {}
-
-  lodash.template@4.5.0:
-    dependencies:
-      lodash._reinterpolate: 3.0.0
-      lodash.templatesettings: 4.2.0
-
-  lodash.templatesettings@4.2.0:
-    dependencies:
-      lodash._reinterpolate: 3.0.0
 
   lodash@4.17.21: {}
 
@@ -2590,7 +2570,7 @@ snapshots:
 
   negotiator@0.6.3: {}
 
-  node-notifier@9.0.1:
+  node-notifier@10.0.1:
     dependencies:
       growly: 1.3.0
       is-wsl: 2.2.0
