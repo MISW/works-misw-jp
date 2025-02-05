@@ -51,7 +51,7 @@ exports.build_js = build_js;
 
 function build_img(cb) {
   gulp
-    .src(['./src/img/**/*'])
+    .src(['./src/img/**/*'], { encoding: false })
     .pipe(plumber(notify.onError('Error: <%= error.message %>')))
     .pipe(gulp.dest('./dist/img/'));
   cb();
