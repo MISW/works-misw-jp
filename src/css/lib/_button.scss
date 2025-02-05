@@ -1,3 +1,5 @@
+@use "variable";
+
 @mixin btn() {
   display: inline-block;
   text-align: center;
@@ -7,32 +9,32 @@
   font-size: 90%;
   border-radius: 0.25em;
   overflow: hidden;
-  color: $link;
+  color: variable.$link;
   background-color: transparent;
   text-decoration: none;
-  border: 1px solid $link;
+  border: 1px solid variable.$link;
   &:hover {
-    background-color: $link;
-    color: $bg;
+    background-color: variable.$link;
+    color: variable.$bg;
     text-decoration: none;
     border-color: transparent;
   }
 }
 @mixin btn-light() {
-  border-color: $light;
-  color: $base;
+  border-color: variable.$light;
+  color: variable.$base;
   &:hover {
-    background-color: $base;
-    color: $bg;
+    background-color: variable.$base;
+    color: variable.$bg;
   }
 }
 @mixin btn-primary() {
-  background-color: $link;
-  color: $bg;
-  border-color: $link;
+  background-color: variable.$link;
+  color: variable.$bg;
+  border-color: variable.$link;
   &:hover {
-    background-color: $hover;
-    color: $bg;
+    background-color: variable.$hover;
+    color: variable.$bg;
   }
 }
 @mixin btn-large() {
@@ -42,7 +44,7 @@
   border-width: 2px;
   width: 100%;
   margin: 0.2em 0;
-  @media #{$mq-sm} {
+  @media #{variable.$mq-sm} {
     padding: 0.7em 2em;
     width: auto;
   }
