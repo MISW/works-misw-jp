@@ -21,6 +21,7 @@
   width: auto;
   margin-left: 10px;
   margin-right: 10px;
+  max-width: 700px;
   @media #{variable.$mq-sm} {
     width: 720px;
     margin-left: auto;
@@ -35,7 +36,6 @@
 }
 .l-container-mini {
   @include l-container();
-  max-width: 700px;
 }
 .l-row {
   @include common.clearfix();
