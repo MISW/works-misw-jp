@@ -27,7 +27,7 @@
     "gulp-uglify-es": "3.0.0",
     "js-yaml": "4.1.1",
     "prettier": "3.5.3",
-    "sass": "1.95.0"
+    "sass": "1.95.1"
   },
   "engines": {
     "node": ">=20",
