@@ -1,16 +1,19 @@
+@use 'common';
+@use 'variable';
+
 .l-container {
   width: auto;
   margin-left: 10px;
   margin-right: 10px;
-  @media #{$mq-sm} {
+  @media #{variable.$mq-sm} {
     width: 720px;
     margin-left: auto;
     margin-right: auto;
   }
-  @media #{$mq-md} {
+  @media #{variable.$mq-md} {
     width: 940px;
   }
-  @media #{$mq-lg} {
+  @media #{variable.$mq-lg} {
     width: 1140px;
   }
 }
@@ -18,32 +21,32 @@
   width: auto;
   margin-left: 10px;
   margin-right: 10px;
-  @media #{$mq-sm} {
+  max-width: 700px;
+  @media #{variable.$mq-sm} {
     width: 720px;
     margin-left: auto;
     margin-right: auto;
   }
-  @media #{$mq-md} {
+  @media #{variable.$mq-md} {
     width: 940px;
   }
-  @media #{$mq-lg} {
+  @media #{variable.$mq-lg} {
     width: 1140px;
   }
 }
 .l-container-mini {
   @include l-container();
-  max-width: 700px;
 }
 .l-row {
-  @include clearfix();
-  @media #{$mq-sm} {
+  @include common.clearfix();
+  @media #{variable.$mq-sm} {
     margin-left: -15px;
     margin-right: -15px;
   }
 }
 [class*='l-span'] {
   margin-bottom: 1em;
-  @media #{$mq-sm} {
+  @media #{variable.$mq-sm} {
     float: left;
     padding-right: 15px;
     padding-left: 15px;
@@ -55,7 +58,7 @@
     max-width: 100%;
   }
 }
-@media #{$mq-sm} {
+@media #{variable.$mq-sm} {
   .l-span1 {
     width: 8.33333333%;
   }
