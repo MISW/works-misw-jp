@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import 'lib/customcss';
-@import 'lib/normalize';
-@import 'lib/variable';
-@import 'lib/button';
-@import 'lib/common';
-@import 'lib/grid';
-@import 'lib/core';
+@use 'lib/customcss';
+@use 'lib/normalize';
+@use 'lib/variable';
+@use 'lib/button';
+@use 'lib/common';
+@use 'lib/grid';
+@use 'lib/core';
